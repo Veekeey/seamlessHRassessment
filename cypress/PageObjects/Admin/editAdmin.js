@@ -17,3 +17,5 @@ class editAdmin {
 
     }
 }
+
+export default editAdmin

@@ -8,7 +8,9 @@ class deleteAdmin{
     }
 
     confirmDelete(){
-        
+
     }
     
 }
+
+export default deleteAdmin

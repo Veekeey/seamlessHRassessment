@@ -2,7 +2,10 @@
 import Login from '../PageObjects/LoginPage'
 // import CreateEmployee from '../PageObjects/Employee/createEmployee'
 // import EditEmployee from '../PageObjects/Employee/editEmployee'
+import DeleteEmployee from '../PageObjects/Employee/deleteEmployee'
 import CreateAdmin from '../PageObjects/Admin/createAdmin'
+import EditAdmin from '../PageObjects/Admin/editAdmin'
+import DeleteAdmin from '../PageObjects/Admin/deleteAdmin'
 
 
 describe('assessment', () => {

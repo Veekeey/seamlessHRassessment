@@ -5,11 +5,13 @@ class editEmployee {
     }
 
     clickonEditIcon(){
-        
+        cy.get(".orangehrm-container").each(($el, index, $list) => {
+            
+        })
     }
 
     editField(){
-        
+
     }
 
     clickSave(){

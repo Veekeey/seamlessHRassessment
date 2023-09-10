@@ -1,4 +1,4 @@
-class deleteEmployee{
+class deleteEmployee {
 
 
     navigateToPim(){
@@ -10,7 +10,9 @@ class deleteEmployee{
     }
 
     confirmDelete(){
-        
+
     }
 
 }
+
+export default deleteEmployee

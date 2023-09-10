@@ -1,7 +1,7 @@
 
 import Login from '../PageObjects/LoginPage'
-// import CreateEmployee from '../PageObjects/Employee/createEmployee'
-// import EditEmployee from '../PageObjects/Employee/editEmployee'
+import CreateEmployee from '../PageObjects/Employee/createEmployee'
+import EditEmployee from '../PageObjects/Employee/editEmployee'
 import DeleteEmployee from '../PageObjects/Employee/deleteEmployee'
 import CreateAdmin from '../PageObjects/Admin/createAdmin'
 import EditAdmin from '../PageObjects/Admin/editAdmin'
@@ -20,36 +20,74 @@ describe('assessment', () => {
 
   })
 
+// Employee feature
 
-  // it('create employee', () =>{
-  //   const employee = new CreateEmployee();
+  it('create employee', () =>{
+    const createEmp = new CreateEmployee();
 
-  //   employee.navigateToPim();
-  //   employee.clickAdd();
-  //   employee.enterFullName("Joy", "Eboh", "Adikwu");
-  //   employee.clickSave();
-  // })
+    createEmp.navigateToPim();
+    createEmp.clickAdd();
+    createEmp.enterFullName("Joy", "Eboh", "Adikwu");
+    createEmp.clickSave();
+  })
 
-  // it('edit employee', ()=>{
-  //   const editEmp = new EditEmployee()
 
-  //   editEmp.navigateToPim();
-  //   editEmp.selectEmployee();
+  it('edit employee', ()=>{
+    const editEmp = new EditEmployee()
 
-  // })
+    editEmp.navigateToPim();
+    editEmp.clickonEditIcon();
+    editEmp.editField();
+    editEmp.clickSave();
+
+  })
+
+  
+  it('delete employee', () =>{
+    const delEmp = new DeleteEmployee;
+
+    delEmp.navigateToPim();
+    delEmp.clickonDeleteIcon();
+    delEmp.confirmDelete();
+
+  })
+
+
+
+
+
+  // Admin feature
 
   it('create admin', () =>{
     const createAdmin = new CreateAdmin();
 
     createAdmin.navigateToAdmin();
     createAdmin.clickAdd();
-    // createAdmin.selectUserRole();
-    // createAdmin.getEmployeeName("Fiona Grace");
-    // createAdmin.selectStatus();
+    createAdmin.selectUserRole();
+    createAdmin.getEmployeeName("Fiona Grace");
+    createAdmin.selectStatus();
     createAdmin.chooseUsername("France");
     createAdmin.choosePassword("Aver1234567");
     createAdmin.confirmPassword("Aver1234567");
-    // createAdmin.clickSave();
+    createAdmin.clickSave();
   })
 
+
+  it('edit admin', () =>{
+    const editAdmin = new EditAdmin;
+
+    editAdmin.navigateToAdmin();
+    editAdmin.clickEditIcon();
+    editAdmin.editField();
+    editAdmin.clickSave();
+  })
+
+
+  it('delete admin', () =>{
+    const delAdmin = new DeleteAdmin;
+
+    delAdmin.navigateToAdmin();
+    delAdmin.clickonDeleteIcon();
+    delAdmin.confirmDelete();
+  })
 })

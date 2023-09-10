@@ -4,7 +4,25 @@ class deleteAdmin{
     }
 
     clickonDeleteIcon(){
-
+        cy.get('.orangehrm-container').each(($el, index, $list)=>{
+            cy.get('.oxd-table').each(($el, index, $list) =>{
+                cy.get('.oxd-table-body').each(($el, index, $list)=>{
+                  cy.get('.oxd-table-card').each(($el, index, $list) =>{
+                    cy.get(".oxd-table-row").each(($el, index, $list)=>{
+                        cy.get('.oxd-table-cell').each(($el, index, $list)=>{
+                            cy.get('.oxd-table-cell-actions').each(($el, index, $list)=>{
+                                cy.get('.oxd-icon-button').each(($el, index, $list)=>{
+                                    
+                                })
+                            })
+                        })
+                    })
+                  })  
+                    
+                })
+                
+            })
+        })
     }
 
     confirmDelete(){

@@ -8,7 +8,7 @@ import EditAdmin from '../PageObjects/Admin/editAdmin'
 import DeleteAdmin from '../PageObjects/Admin/deleteAdmin'
 
 
-describe('assessment', () => {
+describe('Admin and Employee features', () => {
 
   before('login', () => {
     cy.visit("https://opensource-demo.orangehrmlive.com")
@@ -42,7 +42,7 @@ describe('assessment', () => {
 
   })
 
-  
+
   it('delete employee', () =>{
     const delEmp = new DeleteEmployee;
 
@@ -63,17 +63,17 @@ describe('assessment', () => {
 
     createAdmin.navigateToAdmin();
     createAdmin.clickAdd();
-    createAdmin.selectUserRole();
-    createAdmin.getEmployeeName("Fiona Grace");
-    createAdmin.selectStatus();
-    createAdmin.chooseUsername("France");
-    createAdmin.choosePassword("Aver1234567");
-    createAdmin.confirmPassword("Aver1234567");
-    createAdmin.clickSave();
+    // createAdmin.selectUserRole();
+    // createAdmin.chooseUsername("Jayjayjay");
+    // createAdmin.choosePassword("Jay1234567");
+    // createAdmin.confirmPassword("Jay1234567");
+    // createAdmin.selectStatus();
+    createAdmin.getEmployeeName("Jo");
+    // createAdmin.clickSave();
   })
 
 
-  it('edit admin', () =>{
+  it.only('edit admin', () =>{
     const editAdmin = new EditAdmin;
 
     editAdmin.navigateToAdmin();

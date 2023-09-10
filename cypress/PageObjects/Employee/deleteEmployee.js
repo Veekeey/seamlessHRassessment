@@ -6,7 +6,23 @@ class deleteEmployee {
     }
 
     clickonDeleteIcon(){
-
+        cy.get(".orangehrm-container").each(($el, index, $list) => {
+            cy.get('.oxd-table').each(($el, index, $list) =>{
+                cy.get('.oxd-table-body').each(($el, index, $list) =>{
+                    cy.get('.oxd-table-card').each(($el, index, $list) =>{
+                        cy.get('.oxd-table-row').each(($el, index, $list) =>{
+                            cy.get('.oxd-table-cell').each(($el, index, $list) =>{
+                                cy.get('.oxd-table-cell-actions').each(($el, index, $list) =>{
+                                    cy.get('.xd-icon-button').each(($el, index, $list) =>{
+                                        // get delete icon and click
+                                    })
+                                })
+                            })
+                        })
+                    })
+                })
+            })
+        })
     }
 
     confirmDelete(){

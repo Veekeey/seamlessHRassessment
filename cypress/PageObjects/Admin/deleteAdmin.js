@@ -12,7 +12,7 @@ class deleteAdmin{
                         cy.get('.oxd-table-cell').each(($el, index, $list)=>{
                             cy.get('.oxd-table-cell-actions').each(($el, index, $list)=>{
                                 cy.get('.oxd-icon-button').each(($el, index, $list)=>{
-                                    
+                                    //get the delete icon and click
                                 })
                             })
                         })

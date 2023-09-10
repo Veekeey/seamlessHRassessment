@@ -58,22 +58,22 @@ describe('Admin and Employee features', () => {
 
   // Admin feature
 
-  it('create admin', () =>{
+  it.only('create admin', () =>{
     const createAdmin = new CreateAdmin();
 
     createAdmin.navigateToAdmin();
     createAdmin.clickAdd();
-    // createAdmin.selectUserRole();
-    // createAdmin.chooseUsername("Jayjayjay");
-    // createAdmin.choosePassword("Jay1234567");
-    // createAdmin.confirmPassword("Jay1234567");
-    // createAdmin.selectStatus();
+    createAdmin.selectUserRole();
+    createAdmin.chooseUsername("Jayjayjay");
+    createAdmin.choosePassword("Jay1234567");
+    createAdmin.confirmPassword("Jay1234567");
+    createAdmin.selectStatus();
     createAdmin.getEmployeeName("Jo");
-    // createAdmin.clickSave();
+    createAdmin.clickSave();
   })
 
 
-  it.only('edit admin', () =>{
+  it('edit admin', () =>{
     const editAdmin = new EditAdmin;
 
     editAdmin.navigateToAdmin();

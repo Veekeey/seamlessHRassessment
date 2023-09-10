@@ -15,7 +15,7 @@ class editAdmin {
                             cy.get('.oxd-table-cell-actions').each(($el, index, $list)=>{
                                 cy.get('.oxd-icon-button').each(($el, index, $list)=>{
                                     // cy.get('.bi-pencil-fill').click();
-                                    // cy.get(':nth-child(1) > .oxd-table-row > :nth-child(6) > .oxd-table-cell-actions > :nth-child(2)');
+                                    // get the edit icon and click
                                 })
                             })
                         })
